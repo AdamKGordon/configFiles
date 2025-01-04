@@ -3,6 +3,9 @@ config/setting files like .xml, .ini, etc... for things like vscode, intellij, n
 
 
 File Structure:
->AppNames(folders)
--->DateExported(folders, YYYYMMDD-{{whereSourcedFrom}}, eg, 20221130-ModernCampus)
----->configFiles(all config files and folders related to parent folder)
+```
+{{appNames}}/ # eg, vscode
+├── {{dateExported}}/ # in format of YYYYMMDD-{{whereSourcedFrom}}, Example: 20221130-ModernCampus
+│       └── {{configFiles}}/  # All config files and folders related to parent folder
+```
+
